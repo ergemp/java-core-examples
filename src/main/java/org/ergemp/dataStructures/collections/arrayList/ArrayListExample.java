@@ -5,6 +5,13 @@ import java.util.ArrayList;
 public class ArrayListExample {
     public static void main(String[] args) {
 
+        /*
+        List in Java provides the facility to maintain the ordered collection.
+        It contains the index-based methods to insert, update, delete and search the elements.
+        It can have the duplicate elements also.
+        We can also store the null elements in the list.
+        */
+
         ArrayList<String> list=new ArrayList<String>(); // Creating arraylist
         list.add("Mango"); // Adding object in arraylist
         list.add("Apple");
