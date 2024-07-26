@@ -29,17 +29,18 @@ public class JavaUtilDateExamples {
         // A date object is created with the specified time.
         Date d = new Date();
         System.out.println("Initial date is: " + d);
+
         // setting the time for 1000000 milliseconds after
         // 01 January, 1970, 00:00:00 GMT.
         d.setTime(1000000);
+
         // Printing the time
         System.out.println("Date after the setting the time is: " + d);
+
         /*
         Initial date is: Tue Nov 28 16:54:29 EET 2023
         Date after the setting the time is: Thu Jan 01 02:16:40 EET 1970
         */
-
-
 
     }
 }

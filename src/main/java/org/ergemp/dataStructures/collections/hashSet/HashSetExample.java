@@ -18,7 +18,7 @@ public class HashSetExample {
         */
 
         //Creating HashSet and adding elements
-        HashSet<String> set=new HashSet();
+        HashSet<String> set = new HashSet();
         set.add("One");
         set.add("Two");
         set.add("Three");
