@@ -1,11 +1,9 @@
-package org.ergemp.dataStructures.collections.arrayList;
-
-import org.ergemp.dataStructures.collections.util.Nvl;
+package org.ergemp.dataStructures.collections;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class ConvertArrayToList {
+public class ArrayExample {
     public static void main (String[] args)
     {
         String strCSV = "PV,scroll,refinement,CampaignProductListing,PSSearchProductListing,productClick,SeasonSearchProductListing,SeasonSearchProductListing,BrandProductListing,CategoryProductListing,productView";
@@ -14,7 +12,8 @@ public class ConvertArrayToList {
 
         Arrays.asList(strCSV.replace(" ", "")).contains(strSearch);
         strCSV.replace(" ", "").contains(strSearch);
-        Nvl.nvl(strCSV2.replace(" ", ""),strSearch).contains(strSearch);
+        org.ergemp.dataStructures.collections.util.Nvl.nvl(strCSV2.replace(" ", ""),strSearch).contains(strSearch);
+
 
         // create a string array
         String[] firstArray = {"first","second","third"};
