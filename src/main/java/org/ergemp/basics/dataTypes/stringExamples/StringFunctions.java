@@ -1,7 +1,7 @@
 package org.ergemp.basics.dataTypes.stringExamples;
 
 public class StringFunctions {
-    public void run()
+    public static void main(String[] args)
     {
         String raw = "ttüğşçöıtt";
         String rep = "";
@@ -12,5 +12,6 @@ public class StringFunctions {
         String jsonString = "\"ts\":\"123456\"";
         System.out.println(jsonString);
         System.out.println(jsonString.replaceAll(".ts.:.(\\d+).","ttt-$1000-ttt"));
+
     }
 }

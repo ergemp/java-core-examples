@@ -3,6 +3,7 @@ package org.ergemp.dateTime.javaUtilExamples;
 import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class JavaUtilCalendarExamples {
     public static void main(String[] args) {
@@ -14,6 +15,10 @@ public class JavaUtilCalendarExamples {
         // such as MONTH, YEAR, HOUR, etc. It inherits Object class and implements the Comparable interface.
 
         Calendar calendar = Calendar.getInstance();
+        Calendar gCalendar = new GregorianCalendar();
+
+        System.out.println("Epoch Time is: " + calendar.getTimeInMillis());
+
         System.out.println("The current date is : " + calendar.getTime());
         calendar.add(Calendar.DATE, -15);
         System.out.println("15 days ago: " + calendar.getTime());
@@ -61,7 +66,6 @@ public class JavaUtilCalendarExamples {
         Minimum number of weeks in year: 1
         */
 
-
         // Creating an object of Calendar
         // by invoking the getInstance method
         Calendar cln = Calendar.getInstance();
@@ -82,6 +86,7 @@ public class JavaUtilCalendarExamples {
         The original Date is: Thu Aug 12 16:57:49 EET 2021
         The instant is: 2021-08-12T13:57:49.549Z
         */
+
 
 
     }
