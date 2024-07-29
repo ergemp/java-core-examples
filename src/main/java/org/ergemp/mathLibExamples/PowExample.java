@@ -1,4 +1,4 @@
-package org.ergemp.MatLibExamples;
+package org.ergemp.mathLibExamples;
 
 import static java.lang.Math.pow;
 
