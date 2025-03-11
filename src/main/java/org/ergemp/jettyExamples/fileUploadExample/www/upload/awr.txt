@@ -1,0 +1,290 @@
+--------------- 
+Report Summary 
+--------------- 
+database name: next_crm_data
+begin snapshot: 2021-01-06 15:05:30
+end snapshot: 2021-01-06 15:39:23
+--------------- 
+
+-------------------- 
+Database Level Usage 
+-------------------- 
+Cache Hit Ratio: 100.00
+Total Used Temporary Files: 443
+Total Used Temporary MBs: 2168
+Total Commits: 266595
+Total Read Time (Sec): 212.483345999956
+Total Write Time (sec): 0.01225
+Total Database Size (current): 232 GB
+Total Database Block Size (current): 8192
+Current TXID (current): 1185529897
+-------------------- 
+
+-------------------- 
+TX Wraparound (current) 
+-------------------- 
+oldest_current_xid: 169094872
+autovacuum_freeze_max_age: 200000000
+pct_towards_emergency_autovac: 85
+-------------------- 
+
+-------------------- 
+Top 20 Wait events occured (counts) 
+---------------------
+wait_event_type                                   	wait_event                                        	total_waits
+Client                                            	ClientRead                                        	2042	
+Client                                            	ClientWrite                                       	5	
+Activity                                          	WalWriterMain                                     	4	
+Activity                                          	LogicalLauncherMain                               	4	
+Activity                                          	BgWriterMain                                      	4	
+Activity                                          	AutoVacuumMain                                    	4	
+Activity                                          	WalSenderMain                                     	3	
+IO                                                	DataFileRead                                      	3	
+Lock                                              	transactionid                                     	2	
+LWLock                                            	WALWriteLock                                      	1	
+-------------------- 
+
+------------------
+Memory Efficiency 
+------------------
+Table Cache Hit Ratio: 99.57
+Index Cache Hit Ratio: 98.96
+
+--------------
+IO Efficiency 
+--------------
+--------------
+Top 20 Seq Scan Tables 
+--------------
+seq_scan_ratio      	schemaname                                        	relname                                                     	seq_scan            	idx_scan            	seq_tup_read        	idx_tup_fetch       
+100                 	party_management                                  	individual_other_name                                       	700                 	0                   	0                   	0                   	
+100                 	agreement_management                              	allowance                                                   	23388               	0                   	0                   	0                   	
+100                 	account_management                                	billing_account_status_change_reason                        	458                 	0                   	18251               	0                   	
+100                 	account_management                                	flyway_schema_history                                       	190                 	0                   	8360                	0                   	
+100                 	party_role_management                             	vodafone_mobile_tariff_suggest                              	1                   	0                   	1                   	0                   	
+100                 	party_management                                  	disability                                                  	672                 	0                   	136416              	0                   	
+100                 	party_management                                  	flyway_schema_history                                       	12                  	0                   	360                 	0                   	
+100                 	agreement_management                              	product_offering                                            	4038                	0                   	0                   	0                   	
+100                 	agreement_management                              	promotion_relation_ref                                      	39                  	0                   	0                   	0                   	
+100                 	party_management                                  	external_reference                                          	636                 	0                   	0                   	0                   	
+100                 	agreement_management                              	agreement_authorization                                     	12836               	0                   	0                   	0                   	
+100                 	agreement_management                              	characteristic_value_history                                	1                   	0                   	200                 	0                   	
+100                 	agreement_management                              	price                                                       	1                   	0                   	0                   	0                   	
+100                 	party_role_management                             	partner_contact_medium                                      	24                  	0                   	0                   	0                   	
+100                 	agreement_management                              	commitment                                                  	23388               	0                   	0                   	0                   	
+100                 	account_management                                	fee_type                                                    	4                   	0                   	284                 	0                   	
+100                 	party_role_management                             	sales_responsible_sales_sector_relationship                 	9082                	0                   	5676250             	0                   	
+100                 	agreement_management                              	agreement_term_or_condition                                 	22976               	0                   	0                   	0                   	
+100                 	agreement_management                              	commitment_period                                           	2                   	0                   	0                   	0                   	
+100                 	party_management                                  	lov                                                         	97                  	0                   	93605               	0                   	
+-------------------- 
+
+--------------
+Cache HIT Ratio for tables 
+--------------
+table_name                                        	disk_hits           	pct_disk_hits       	pct_cache_hits      	total_hits          
+all                                               	39956647            	0.41                	99.59               	9803574146          	
+organization_parent_relationship                  	6079                	99.59               	0.41                	6104                	
+pg_toast_818640355                                	460                 	99.57               	0.43                	462                 	
+partyrolepartyid                                  	890                 	99.44               	0.56                	895                 	
+organization                                      	49953               	99.20               	0.80                	50356               	
+organizationpocarray                              	466                 	99.15               	0.85                	470                 	
+subscription_history                              	7722375             	99.07               	0.93                	7794690             	
+subscription                                      	2096274             	96.66               	3.34                	2168783             	
+vodafone_mobile_tariff_suggest                    	75                  	96.15               	3.85                	78                  	
+pg_event_trigger                                  	35                  	94.59               	5.41                	37                  	
+contact                                           	1222254             	94.28               	5.72                	1296462             	
+error_task_assignment                             	18804               	93.41               	6.59                	20131               	
+pg_description                                    	1453                	91.38               	8.62                	1590                	
+pg_default_acl                                    	19                  	90.48               	9.52                	21                  	
+pg_depend                                         	1677                	89.73               	10.27               	1869                	
+pg_toast_819413909                                	349                 	89.72               	10.28               	389                 	
+characteristic_value_id                           	206                 	89.57               	10.43               	230                 	
+pcnextdataset                                     	359                 	89.53               	10.47               	401                 	
+characteristic_id                                 	209                 	88.94               	11.06               	235                 	
+sil_hikmet_ftth_product_list                      	15524               	88.35               	11.65               	17572               	
+-------------------- 
+
+---------- 
+Temp Usage 
+-----------
+---------- 
+Top 10 Temp Usage By Queries  
+-----------
+total_exec_time     	ncalls              	avg_exec_time_sec   	sync_io_time        	temp_blks_written   	queryid             	query
+-------------------- 
+
+---------- 
+Top 20 Long Running Queries  
+-----------
+ms_per_execution    	ncalls              	total_exec_time     	mean_time           	rrows               	shared_blks_hit     	shared_blks_read    	local_blks_hit      	local_blks_read     	temp_blks_read      	temp_blks_written   	blk_read_time       	blk_write_time      	userid              	queryid             	query
+00:00:36.395895     	1,506               	15:13:32.218191     	1.68495814038761    	1506                	8388125101          	84103               	0                   	0                   	0                   	0                   	99346.974485008     	0                   	7061450             	4833922863305902930 	select delete_agreement_fn($1)	
+00:00:04.482028     	18                  	00:01:20.676513     	1.91697693831293    	18                  	37867002            	942787              	0                   	0                   	0                   	0                   	894794.479309001    	0                   	7061449             	-4657923695696223930	SELECT count (distinct proc_inst_id_) FROM act_hi_actinst aha where aha.proc_def_key_  = $1 and  act_id_  in ($2)  and end_time_ is not null  and  proc_inst_id_ in (select distinct (proc_inst_id_) fr	
+00:00:04.382337     	1                   	00:00:04.382337     	4382.33676          	1                   	2021047             	0                   	0                   	0                   	0                   	0                   	0                   	0                   	7061449             	-5618285788636616918	SELECT distinct count (proc_inst_id_) FROM act_hi_actinst aha where aha.proc_def_key_  = $1 and  act_id_  in ($2) and end_time_ is  not null  and  proc_inst_id_ in (select distinct (proc_inst_id_) fr	
+00:00:03.465991     	256                 	00:14:47.293623     	0.502662662397597   	256                 	134752271           	3480945             	0                   	0                   	0                   	0                   	114453.003679       	0                   	7061450             	-134123786522013605 	delete from charge_type where id=$1	
+00:00:01.827136     	11                  	00:00:20.098496     	2.18208055854848    	11                  	9329308             	1393020             	0                   	0                   	0                   	0                   	291865.57372        	0                   	7061449             	-3402044136056874257	select percentile_disc($1)  within group (order by t.duration) as  percentile95 from  (  select  distinct proc_inst_id_ ,   (select  extract($2 from  case when MAX(end_time_) is not null then MAX(end	
+00:00:01.2352       	1                   	00:00:01.2352       	0.084184205914994   	1                   	623074              	228586              	0                   	0                   	0                   	0                   	51073.798525        	0                   	7061449             	543316416583505714  	select count(*) from act_hi_actinst aha where aha.proc_def_key_  = $1 and act_id_  = $2	
+00:00:01.14768      	14                  	00:00:16.067513     	1147.67948185714    	14                  	1253664             	0                   	0                   	0                   	0                   	0                   	0                   	0                   	7061450             	1310435361038223832 	delete from medium where id=$1	
+00:00:01.095883     	1                   	00:00:01.095883     	1095.883012         	1                   	459841              	0                   	0                   	0                   	0                   	0                   	0                   	0                   	7061449             	2010798717752746376 	select percentile_disc($1)  within group (order by t.duration) as  percentile50  from  (  select  distinct proc_inst_id_ ,   (select  extract($2 from  case when MAX(end_time_) is not null then MAX(en	
+00:00:00.962202     	21                  	00:00:20.206237     	1.63740417068652    	25                  	8682333             	12                  	0                   	0                   	0                   	0                   	29.7462339999984    	0                   	7061450             	-5354904298638465695	select partyrole0_.id as id1_19_, partyrole0_.create_date as create_d2_19_, partyrole0_.created_by as created_3_19_, partyrole0_.end_date as end_date4_19_, partyrole0_.last_modified_by as last_mod5_1	
+00:00:00.929203     	39                  	00:00:36.23893      	0.449564668277503   	39                  	47449971            	1                   	0                   	0                   	0                   	0                   	0.832614000013564   	0                   	7061449             	-142295517389332876 	SELECT distinct count(*) FROM act_hi_actinst aha where aha.proc_def_key_  = $1 and  act_id_  in ($2) and end_time_ is  not null  and  proc_inst_id_ in (select proc_inst_id_ from act_hi_procinst ahp w	
+00:00:00.780626     	45                  	00:00:35.128175     	0.152420225822084   	5                   	68271008            	21369               	0                   	0                   	0                   	0                   	1964.274702         	0                   	7061450             	5482292956562553725 	select userentity0_.ID as ID1_71_, userentity0_.CREATED_TIMESTAMP as CREATED_2_71_, userentity0_.EMAIL as EMAIL3_71_, userentity0_.EMAIL_CONSTRAINT as EMAIL_CO4_71_, userentity0_.EMAIL_VERIFIED as EM	
+00:00:00.698413     	7,734               	01:30:01.523599     	1.07583422494992    	172213364           	588915776           	63                  	0                   	0                   	0                   	0                   	48.6070440000003    	0                   	7061450             	-5843887295383372314	select agreement0_.id as id1_0_0_, agreementi1_.id as id1_6_1_, agreementi2_.id as id1_7_2_, product5_.id as id1_42_3_, characteri7_.id as id1_16_4_, characteri8_.id as id1_43_5_, pricing12_.id as id	
+00:00:00.626102     	163                 	00:01:42.054622     	0.0703506940020588  	163                 	19263520            	6                   	0                   	0                   	0                   	0                   	5.123546            	0                   	7061450             	-5183663381046533406	delete from party_ref where id=$1	
+00:00:00.614782     	6                   	00:00:03.688694     	0.00819750165749156 	6                   	1079262             	713785              	0                   	0                   	0                   	0                   	36140.499902        	0                   	7061450             	7259419532349220823 	select characteri0_.organization_poc_id as organiz11_1_0_, characteri0_.id as id1_1_0_, characteri0_.id as id1_1_1_, characteri0_.create_date as create_d2_1_1_, characteri0_.created_by as created_3_1	
+00:00:00.594714     	162                 	00:01:36.343672     	0.138937831742396   	162                 	19145334            	0                   	0                   	0                   	0                   	0                   	0                   	0                   	7061450             	-8311113946396053693	delete from role_type_ref where id=$1	
+00:00:00.594178     	23,233              	03:50:04.537631     	594.178006760519    	23233               	0                   	0                   	0                   	0                   	0                   	0                   	0                   	0                   	10                  	8279530797932339524 	SELECT pg_read_binary_file($1, off, size), size::text FROM( VALUES ($2,$3)) AS rng(off, size)	
+00:00:00.496015     	9,065               	01:14:56.377003     	0.723818682732372   	69818               	2514657793          	1                   	0                   	0                   	0                   	0                   	0.0173149999991438  	0                   	7061450             	2018273619200786094 	select RES.ID_,       RES.REV_,       RES.DUEDATE_,       RES.PROCESS_INSTANCE_ID_,       RES.EXCLUSIVE_          from ACT_RU_JOB RES      where (RES.RETRIES_ > $6)       and (                   RES.	
+00:00:00.470207     	1                   	00:00:00.470207     	470.207018          	1                   	176966              	0                   	0                   	0                   	0                   	0                   	0                   	0                   	7061450             	6630007222758338044 	select customer0_.id as id1_19_, customer0_1_.create_date as create_d2_19_, customer0_1_.created_by as created_3_19_, customer0_1_.end_date as end_date4_19_, customer0_1_.last_modified_by as last_mod	
+00:00:00.431603     	53                  	00:00:22.874961     	0.126967490754282   	155                 	6963378             	361515              	0                   	0                   	0                   	0                   	24927.772534        	0                   	7061450             	-4903490022587998712	SELECT ci.* FROM customer_interaction ci WHERE ci.customer_id = $1 AND (lower(ci.description) like lower(concat($8, $2,$9)) OR lower(ci.item_number) like lower(concat($10, $3, $11)) OR lower(ci.order	
+00:00:00.430491     	91                  	00:00:39.174658     	0.0339727689527081  	91                  	16103929            	151868              	0                   	0                   	0                   	0                   	12485.867584        	0                   	7061450             	-4406477914171160723	select distinct customer0_.id as id1_19_, customer0_1_.create_date as create_d2_19_, customer0_1_.created_by as created_3_19_, customer0_1_.end_date as end_date4_19_, customer0_1_.last_modified_by as	
+-------------------- 
+
+---------- 
+Top 20 Bloat Usage By Tables (current)  
+-----------
+current_database              	schema_name                   	table_name                                                  	tbloat              	wasted_bytes        	
+next_crm_data                 	agreement_management          	agreement_item_relationship                                 	2.6                 	3343548416          	
+next_crm_data                 	agreement_management          	characteristic                                              	1.1                 	2810748928          	
+next_crm_data                 	agreement_management          	subscription_history                                        	3.1                 	1885667328          	
+next_crm_data                 	agreement_management          	product                                                     	2.0                 	1629929472          	
+next_crm_data                 	agreement_management          	agreement_item_account_ref                                  	1.5                 	664764416           	
+next_crm_data                 	agreement_management          	charge                                                      	1.2                 	646225920           	
+next_crm_data                 	agreement_management          	subscription                                                	2.4                 	597680128           	
+next_crm_data                 	agreement_management          	product_characteristic_values                               	1.1                 	585678848           	
+next_crm_data                 	party_role_management         	contact_medium_characteristic                               	1.4                 	465567744           	
+next_crm_data                 	party_role_management         	party_role                                                  	1.5                 	333586432           	
+next_crm_data                 	agreement_management          	product_offering_term                                       	1.9                 	279863296           	
+next_crm_data                 	agreement_management          	party_role_ref                                              	1.1                 	179871744           	
+next_crm_data                 	agreement_management          	agreement_item_status                                       	1.3                 	168861696           	
+next_crm_data                 	agreement_management          	sil_hikmet_ssg_profile                                      	2.9                 	120602624           	
+next_crm_data                 	party_role_management         	customer                                                    	1.5                 	115785728           	
+next_crm_data                 	agreement_management          	archive_agreement                                           	1.1                 	108486656           	
+next_crm_data                 	agreement_management          	agreement                                                   	1.2                 	99598336            	
+next_crm_data                 	agreement_management          	characteristic_value_history                                	1.1                 	95354880            	
+next_crm_data                 	account_management            	billing_account                                             	1.4                 	92954624            	
+next_crm_data                 	party_role_management         	characteristic                                              	1.0                 	92307456            	
+-------------------- 
+
+---------- 
+Top 20 Closest Tables to Wraparound (current)  
+-----------
+schema_name                   	table_name                                                  	age                 	tablesize           	
+818690990                     	agreement_management.subscription_history_20201217          	169094872           	581 MB              	
+818690990                     	agreement_management.agreement                              	151137582           	658 MB              	
+818690990                     	agreement_management.agreement_item                         	151137582           	2013 MB             	
+818690990                     	agreement_management.product                                	151137582           	5509 MB             	
+818636782                     	account_management.sil_hikmet_subs_process                  	150450810           	1088 kB             	
+818690990                     	agreement_management.sil_sil_hikmet_d                       	148486068           	1280 kB             	
+818690990                     	agreement_management.ftth_product_mismatch                  	146523733           	16 kB               	
+2200                          	table_size                                                  	146523733           	64 kB               	
+818690990                     	agreement_management.ftth_prov_modem_final                  	146523733           	16 kB               	
+818690990                     	agreement_management.ftth_prov_final                        	146523733           	16 kB               	
+818690990                     	agreement_management.ftth_product_final                     	146523733           	16 kB               	
+818690990                     	agreement_management.ftth_prov_mismatch                     	146523733           	16 kB               	
+912029695                     	fv_stats.stat_activity_hist                                 	120151842           	87 MB               	
+912029695                     	fv_stats.statio_all_indexes_hist                            	120151842           	71 MB               	
+912029695                     	fv_stats.stat_statements_hist                               	120151842           	324 MB              	
+912029695                     	fv_stats.stat_all_tables_hist                               	120151842           	93 MB               	
+912029695                     	fv_stats.stat_all_indexes_hist                              	120151842           	79 MB               	
+11                            	pg_type                                                     	120151842           	1592 kB             	
+912029695                     	fv_stats.statio_all_tables_hist                             	120151842           	61 MB               	
+912029695                     	fv_stats.stat_locks_hist                                    	120151842           	94 MB               	
+-------------------- 
+
+---------- 
+Top 20 Largest Tables (current)  
+-----------
+schema_name                   	relation_name                                               	total_size          	
+agreement_management          	characteristic                                              	90 GB               	
+agreement_management          	product_characteristic_values                               	18 GB               	
+agreement_management          	pcnextdataset                                               	10002 MB            	
+agreement_management          	archive_agreement_item                                      	9050 MB             	
+agreement_management          	agreement_item_relationship                                 	7866 MB             	
+agreement_management          	charge                                                      	7432 MB             	
+party_role_management         	characteristic                                              	7068 MB             	
+agreement_management          	characteristic_value_id                                     	5701 MB             	
+agreement_management          	characteristic_id                                           	5701 MB             	
+agreement_management          	product                                                     	5509 MB             	
+agreement_management          	subscription_history                                        	4346 MB             	
+party_role_management         	contact_medium_characteristic                               	3908 MB             	
+agreement_management          	agreement_item_account_ref                                  	3014 MB             	
+party_management              	characteristic                                              	2762 MB             	
+agreement_management          	charge_type                                                 	2359 MB             	
+agreement_management          	party_role_ref                                              	2283 MB             	
+agreement_management          	characteristic_value_history                                	2212 MB             	
+agreement_management          	agreement_item_status                                       	2201 MB             	
+agreement_management          	pricing_alteration                                          	2189 MB             	
+agreement_management          	agreement_item                                              	2013 MB             	
+-------------------- 
+
+---------- 
+General Parameters 
+-----------
+name                          	setting                       	category                                                    	
+wal_buffers                   	2048                          	Write-Ahead Log / Settings                                  	
+update_process_title          	on                            	Process Title                                               	
+temp_buffers                  	1024                          	Resource Usage / Memory                                     	
+superuser_reserved_connections	3                             	Connections and Authentication / Connection Settings        	
+shared_buffers                	16777216                      	Resource Usage / Memory                                     	
+port                          	5432                          	Connections and Authentication / Connection Settings        	
+max_connections               	1500                          	Connections and Authentication / Connection Settings        	
+maintenance_work_mem          	2097152                       	Resource Usage / Memory                                     	
+effective_cache_size          	50331648                      	Query Tuning / Planner Cost Constants                       	
+cluster_name                  	VFNEXT                        	Process Title                                               	
+autovacuum_work_mem           	-1                            	Resource Usage / Memory                                     	
+authentication_timeout        	60                            	Connections and Authentication / Authentication             	
+-------------------- 
+
+---------- 
+Autovacuum Parameters 
+-----------
+name                          	setting                       	category                                                    	
+vacuum_freeze_min_age         	50000000                      	Client Connection Defaults / Statement Behavior             	
+vacuum_cost_page_miss         	10                            	Resource Usage / Cost-Based Vacuum Delay                    	
+vacuum_cost_page_hit          	1                             	Resource Usage / Cost-Based Vacuum Delay                    	
+vacuum_cost_page_dirty        	20                            	Resource Usage / Cost-Based Vacuum Delay                    	
+maintenance_work_mem          	2097152                       	Resource Usage / Memory                                     	
+autovacuum_vacuum_scale_factor	0.2                           	Autovacuum                                                  	
+autovacuum_vacuum_cost_limit  	-1                            	Autovacuum                                                  	
+autovacuum_vacuum_cost_delay  	20                            	Autovacuum                                                  	
+autovacuum_naptime            	60                            	Autovacuum                                                  	
+autovacuum_max_workers        	3                             	Autovacuum                                                  	
+autovacuum_freeze_max_age     	200000000                     	Autovacuum                                                  	
+-------------------- 
+
+---------- 
+Parallel Processes Parameters 
+-----------
+name                          	setting                       	category                                                    	
+work_mem                      	22369                         	Resource Usage / Memory                                     	
+parallel_tuple_cost           	0.1                           	Query Tuning / Planner Cost Constants                       	
+parallel_setup_cost           	1000                          	Query Tuning / Planner Cost Constants                       	
+min_parallel_table_scan_size  	1024                          	Query Tuning / Planner Cost Constants                       	
+min_parallel_index_scan_size  	64                            	Query Tuning / Planner Cost Constants                       	
+max_worker_processes          	192                           	Resource Usage / Asynchronous Behavior                      	
+max_parallel_workers_per_gather	4                             	Resource Usage / Asynchronous Behavior                      	
+max_parallel_workers          	192                           	Resource Usage / Asynchronous Behavior                      	
+maintenance_work_mem          	2097152                       	Resource Usage / Memory                                     	
+force_parallel_mode           	off                           	Query Tuning / Other Planner Options                        	
+-------------------- 
+
+---------- 
+WAL Parameters
+-----------
+name                          	setting                       	category                                                    	
+wal_writer_flush_after        	128                           	Write-Ahead Log / Settings                                  	
+wal_writer_delay              	200                           	Write-Ahead Log / Settings                                  	
+wal_sync_method               	fdatasync                     	Write-Ahead Log / Settings                                  	
+wal_level                     	replica                       	Write-Ahead Log / Settings                                  	
+wal_compression               	off                           	Write-Ahead Log / Settings                                  	
+synchronous_commit            	on                            	Write-Ahead Log / Settings                                  	
+max_wal_size                  	6144                          	Write-Ahead Log / Checkpoints                               	
+full_page_writes              	on                            	Write-Ahead Log / Settings                                  	
+fsync                         	on                            	Write-Ahead Log / Settings                                  	
+commit_delay                  	0                             	Write-Ahead Log / Settings                                  	
+checkpoint_timeout            	300                           	Write-Ahead Log / Checkpoints                               	
+checkpoint_flush_after        	32                            	Write-Ahead Log / Checkpoints                               	
+checkpoint_completion_target  	0.7                           	Write-Ahead Log / Checkpoints                               	
+-------------------- 
+
